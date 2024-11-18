@@ -57,24 +57,8 @@ body {
   object-fit: cover; /* Maintain aspect ratio */
 }
 
-.road {
-  background-image: url("/road.png");
-  width: 20vw;
-  background-size: cover; /* Cover the entire div */
-  background-position: center; /* Center the image */
-  
-}
-
-.previewimg {
-  background-image: url('/previewemail.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 34vh;
-  width: 30vw;
-}
-
 .inneremail {
-  background-image: url('/emailinner.png');
+  /* background-image: url('/emailinner.png'); */
   background-size: contain;
   background-repeat: no-repeat;
   height: 19%;
