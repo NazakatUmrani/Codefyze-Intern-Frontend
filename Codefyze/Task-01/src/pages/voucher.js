@@ -124,7 +124,7 @@ export default function Voucher() {
                 <div className="flex flex-col px-[13vw] py-[12vw] md:px-[10vw]">
                   <div className="contents">
                     <Label className="text-[1.5vw] sm:max-md:text-[2vw] text-white">
-                      Recipient's Gift Voucher Preview (Email)
+                      Recipient&apos;s Gift Voucher Preview (Email)
                     </Label>
                   </div>
                   <img
@@ -140,7 +140,7 @@ export default function Voucher() {
                   <div className="w-full contents">
                     <Label className="text-[1.5vw] sm:max-md:text-[2vw] mt-3 leading-none truncate text-white sm:mt-6">
                       You have received a 1-hour driving lesson gift voucher
-                      from (sender's name)
+                      from (sender&apos;s name)
                     </Label>
                   </div>
                 </div>
