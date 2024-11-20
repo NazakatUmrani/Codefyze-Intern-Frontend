@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
+This project is also hosted on vercel, visit this link:[Web App](https://driveruitask01.vercel.app)
+
 ## Getting Started
 
 First, run the development server:
