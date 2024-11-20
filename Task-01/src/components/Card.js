@@ -4,14 +4,15 @@ import 'tailwindcss/tailwind.css'; // Import Tailwind CSS styles
 
 export default function Card() {
     return (
-        <div className="card flex items-center gap-2">
-            <div className='profile'>
+        <div className="card min-h-max h-max w-[80vw] flex items-center gap-2 lg:w-full">
+            <div className='profile w-[5rem] h-[5rem]'>
+            {/* <div className='profile w-20 h-20'> */}
                 <Image
                     src="/profile.jpg"
-                    width={80}
-                    height={80}
                     alt="Picture of the author"
-                    className='profile-image'
+                    width={80} // Provide the width property
+                    height={80} // Provide the height property
+                    className='profile-image w-full h-full object-cover'
                 />
             </div>
             <div className='w-[65%] h-[90%] flex flex-col justify-center'>

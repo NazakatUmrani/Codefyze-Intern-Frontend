@@ -20,7 +20,7 @@ const geistMono = localFont({
 export default function Home() {
   return (
     <div
-      className={`${geistSans.variable} ${geistMono.variable} flex flex-col min-w-screen font-[family-name:var(--font-geist-sans)]`}
+      className={`${geistSans.variable} ${geistMono.variable} flex flex-col min-w-screen font-[family-name:var(--font-geist-sans)] mb-11`}
     >
       <div className="flex justify-between navbar bg-[#1F2A37] h-30">
         <div className="w-full h-20 bg-road bg-center bg-cover sm:w-[20vw] sm:h-auto"></div>
@@ -44,8 +44,8 @@ export default function Home() {
         <div className="text-4xl font-bold m-10">Instructor available in the next 7 days</div>
 
       </div>
-      <div className="CardContainer px-48 justify-center">
-        <div className="flex flex-wrap">
+      <div className="CardContainer lg:px-auto flex justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10">
           <Card />
           <Card />
           <Card />

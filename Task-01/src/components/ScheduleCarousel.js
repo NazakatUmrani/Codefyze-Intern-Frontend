@@ -21,14 +21,6 @@ export default function ScheduleCarousel() {
                         </div>
                     </CarouselItem>
                 </CarouselContent>
-                <div className="relative">
-                    <div className="absolute left-0 top-1/2 transform -translate-y-1/2 ml-4">
-                        <CarouselPrevious />
-                    </div>
-                    <div className="absolute right-0 top-1/2 transform -translate-y-1/2 mr-4">
-                        <CarouselNext />
-                    </div>
-                </div>
             </Carousel>
         </div>
     )
