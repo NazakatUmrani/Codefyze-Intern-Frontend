@@ -26,18 +26,18 @@ export default function Voucher() {
       <div className="flex justify-between navbar bg-[#1F2A37] w-full">
         <div className="hidden w-full h-20 bg-road bg-center bg-cover sm:block sm:w-[20vw] sm:h-auto"></div>
         <div className="flex mx-auto flex-col items-center w-[60vw] py-7 justify-center">
-          <div className="text-white text-2xl md:text-3xl mb-2 font-semibold">
+          <div className="text-white text-[4vw] sm:text-2xl md:text-3xl mb-2 font-semibold">
             Get your gift voucher now!
           </div>
           <div className="w-full flex flex-col gap-2 items-center sm:flex-row sm:w-fit sm:gap-8">
             <Button
-              className="w-full sm:w-auto bg-[#F0B000] px-3 text-center rounded-2xl text-sm py-1 border border-[#F0B000] h-7"
+              className="w-full sm:w-auto bg-[#F0B000] px-3 text-center rounded-2xl text-[4vw] h-5 py-5 sm:text-sm sm:py-1 border border-[#F0B000] sm:h-7"
               variant="primary"
             >
               Step 1 - Gift Voucher
             </Button>
             <Button
-              className="w-full sm:w-auto bg-[#FFFFFF] px-3 text-center rounded-2xl text-sm py-1 border border-[#F0B000] h-7"
+              className="w-full sm:w-auto bg-[#FFFFFF] px-3 text-center rounded-2xl text-[4vw] h-5 py-5 sm:text-sm sm:py-1 border border-[#F0B000] sm:h-7"
               variant="primary"
             >
               Step 2 - Checkout
@@ -176,7 +176,7 @@ export default function Voucher() {
           </div>
           <div className="form flex flex-col mt-8">
             <Label className="text-base font-semibold">To</Label>
-            <div className="space-y-1">
+            <div className="space-y-2 md:space-y-1">
               <Input
                 type="name"
                 placeholder="Recipient first name"
@@ -188,8 +188,8 @@ export default function Voucher() {
                 className="bg-gray-300"
               />
             </div>
-            <Label className="text-base font-semibold mt-4">From</Label>
-            <div className="space-y-1">
+            <Label className="text-base font-semibold mt-8 md:mt-4">From</Label>
+            <div className="space-y-2 md:space-y-1">
               <Input
                 type="name"
                 placeholder="Sender name"
@@ -201,7 +201,7 @@ export default function Voucher() {
                 className="bg-gray-300"
               />
             </div>
-            <Label className="text-base font-semibold mt-4">Message</Label>
+            <Label className="text-base font-semibold mt-8 md:mt-4">Message</Label>
             <Textarea
               placeholder="Type your message here."
               className="min-h-28 bg-gray-300"
@@ -210,7 +210,7 @@ export default function Voucher() {
               Max. 100 characters
             </Label>
             <Button
-              className="px-3 text-center rounded-2xl text-sm py-1 border border-[#F0B000] h-7"
+              className="mt-6 mb-10 px-3 text-center rounded-2xl text-sm py-1 border border-[#F0B000] h-7"
               variant="outline"
             >
               Continue to payment $000
