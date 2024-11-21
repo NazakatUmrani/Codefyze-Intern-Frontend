@@ -2,6 +2,9 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "jsx": "react-jsx", // or "react" for older React versions
+    "allowJs": true,    // Enable support for .js and .jsx files
+    "checkJs": false    // Disable type checking for .js/.jsx files
   }
 }
