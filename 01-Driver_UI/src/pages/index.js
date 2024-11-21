@@ -24,16 +24,16 @@ export default function Home() {
     >
       {/* Navbar */}
       <div className="flex justify-between navbar bg-[#1F2A37] h-30">
-        <div className="w-full h-20 bg-road bg-center bg-cover sm:w-[20vw] sm:h-auto"></div>
-        <div className="hidden sm:flex items-center w-[60vw] p-10 justify-center">
-          <div className="flex flex-col lg:flex-row items-center gap-3">
-            <div className="flex gap-2 w-full">
-              <Button className="bg-[#FFFFFF] w-1/2 lg:w-32 h-8 text-center rounded-2xl text-sm py-1" variant="primary"><span className="text-green-700">✓ </span>Auto</Button>
-              <Button className="bg-[#F0B000] w-1/2 lg:w-32 h-8 text-center rounded-2xl text-sm" variant="primary">Manual</Button>
+        <div className="hidden sm:flex w-full h-20 bg-road bg-center bg-cover sm:w-[20vw] sm:h-auto"></div>
+        <div className="flex items-center w-full sm:w-[60vw] p-10 justify-center">
+          <div className="flex flex-col lg:flex-row items-center gap-3 w-[80vw]">
+            <div className="flex flex-col justify-center gap-2 w-full sm:flex-row">
+              <Button className="bg-[#FFFFFF] w-full sm:w-1/2 lg:w-32 h-8 text-center rounded-2xl text-sm py-1" variant="primary"><span className="text-green-700">✓ </span>Auto</Button>
+              <Button className="bg-[#F0B000] w-full sm:w-1/2 lg:w-32 h-8 text-center rounded-2xl text-sm" variant="primary">Manual</Button>
             </div>
-            <div className="flex gap-2">
-              <Input type="name" placeholder="Enter your suburb" className="bg-[#FFFFFF] text-neutral-400 w-72 h-8 rounded-2xl text-sm py-1 text-start pl-2" />
-              <Button className="bg-[#F3B616] size-8 flex items-center justify-center rounded-full" variant="primary"><Search size={16} /></Button>
+            <div className="flex w-full gap-2">
+              <Input type="name" placeholder="Enter your suburb" className="bg-[#FFFFFF] text-neutral-400 w-full h-8 rounded-2xl text-sm py-1 text-start pl-2" />
+              <Button className="bg-[#F3B616] size-8 flex items-center justify-center rounded-full" variant="primary"><Search className="10vw" /></Button>
             </div>
           </div>
         </div>
