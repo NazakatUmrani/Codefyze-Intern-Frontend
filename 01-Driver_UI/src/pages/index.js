@@ -27,7 +27,7 @@ export default function Home() {
         <div className="hidden sm:flex w-full h-20 bg-road bg-center bg-cover sm:w-[20vw] sm:h-auto"></div>
         <div className="flex items-center w-full sm:w-[60vw] p-10 justify-center">
           <div className="flex flex-col lg:flex-row items-center gap-3 w-[80vw]">
-            <div className="flex flex-col justify-center gap-2 w-full sm:flex-row">
+            <div className="flex flex-col justify-center gap-2 w-full sm:flex-row xl:w-max">
               <Button className="bg-[#FFFFFF] w-full sm:w-1/2 lg:w-32 h-8 text-center rounded-2xl text-sm py-1" variant="primary"><span className="text-green-700">✓ </span>Auto</Button>
               <Button className="bg-[#F0B000] w-full sm:w-1/2 lg:w-32 h-8 text-center rounded-2xl text-sm" variant="primary">Manual</Button>
             </div>
@@ -42,15 +42,15 @@ export default function Home() {
 
       {/* Header */}
       <div className="flex flex-col items-center p-9 gap-6">
-        <div className="text-[2.8vw]">We have <b>19 auto instructors</b> available in <b>Melbourne, 3000. </b>Lesson prices in Melbourne start from <b>$67.50/hr.</b></div>
+        <div className="text-[2.8vw] sm:text-lg md:text-xl">We have <b>19 auto instructors</b> available in <b>Melbourne, 3000. </b>Lesson prices in Melbourne start from <b>$67.50/hr.</b></div>
         <ScheduleCarousel />
-        <div className="text-4xl font-bold md:m-10">Instructor available in the next 7 days</div>
+        <div className="text-[4vw] sm:text-4xl font-bold md:m-10">Instructor available in the next 7 days</div>
 
       </div>
 
       {/* Cards */}
-      <div className="CardContainer lg:px-auto flex justify-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10">
+      <div className="CardContainer flex justify-center">
+        <div className="grid grid-cols-1 lg:w-[80vw] lg:grid-cols-2 lg:gap-x-10">
           {Array.from({ length: 12 }).map((_, index) => (
             <Card key={index} />
           ))}

@@ -4,8 +4,8 @@ import 'tailwindcss/tailwind.css'; // Import Tailwind CSS styles
 
 export default function Card() {
     return (
-        <div className="card w-[90%] h-auto aspect-[2/1] flex items-center gap-2 justify-center lg:w-full border-b-gray-100">
-            <div className='profile h-2/4 aspect-square'>
+        <div className="card w-[90%] h-auto aspect-[2/1] flex items-center justify-center sm:w-full border-b-gray-100">
+            <div className='profile h-2/4 lg:h-auto lg:w-1/2 aspect-square'>
                 {/* <div className='profile w-20 h-20'> */}
                 <Image
                     src="/profile.jpg"
@@ -15,7 +15,7 @@ export default function Card() {
                     className='profile-image w-full h-full object-cover'
                 />
             </div>
-            <div className='w-full h-[95%] flex flex-col justify-center'>
+            <div className='w-full h-[95%] flex flex-col justify-center ml-[2vw]'>
                 <div className='text-[3.7vw] font-semibold'>William</div>
                 <div className='mt-[0.7vw]'>
                     <span className='text-[2vw] text-[#1F2A37] font-medium border border-[#1F2A37] py-[0.5vw] px-[2vw] rounded-2xl'>View Profile</span>
