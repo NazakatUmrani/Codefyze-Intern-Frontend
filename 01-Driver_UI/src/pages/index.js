@@ -41,34 +41,19 @@ export default function Home() {
       </div>
 
       {/* Header */}
-      <div className="toptext flex flex-col items-center p-9 gap-6">
-        <div className="">We have <b>19 auto instructors</b> available in <b>Melbourne, 3000. </b>Lesson prices in Melbourne start from <b>$67.50/hr.</b></div>
+      <div className="flex flex-col items-center p-9 gap-6">
+        <div className="text-[2.8vw]">We have <b>19 auto instructors</b> available in <b>Melbourne, 3000. </b>Lesson prices in Melbourne start from <b>$67.50/hr.</b></div>
         <ScheduleCarousel />
-        <div className="text-4xl font-bold m-10">Instructor available in the next 7 days</div>
+        <div className="text-4xl font-bold md:m-10">Instructor available in the next 7 days</div>
 
       </div>
 
       {/* Cards */}
       <div className="CardContainer lg:px-auto flex justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {Array.from({ length: 12 }).map((_, index) => (
+            <Card key={index} />
+          ))}
         </div>
       </div>
     </div>
