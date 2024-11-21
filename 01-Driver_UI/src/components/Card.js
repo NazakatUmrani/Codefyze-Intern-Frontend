@@ -4,9 +4,9 @@ import 'tailwindcss/tailwind.css'; // Import Tailwind CSS styles
 
 export default function Card() {
     return (
-        <div className="card min-h-max h-max w-[80vw] flex items-center gap-2 lg:w-full">
-            <div className='profile w-[5rem] h-[5rem]'>
-            {/* <div className='profile w-20 h-20'> */}
+        <div className="card w-[90%] h-auto aspect-[2/1] flex items-center gap-2 justify-center lg:w-full border-b-gray-100">
+            <div className='profile h-2/4 aspect-square'>
+                {/* <div className='profile w-20 h-20'> */}
                 <Image
                     src="/profile.jpg"
                     alt="Picture of the author"
@@ -15,20 +15,20 @@ export default function Card() {
                     className='profile-image w-full h-full object-cover'
                 />
             </div>
-            <div className='w-[65%] h-[90%] flex flex-col justify-center'>
-                <div><b>William</b></div>
-                <div className='mt-2'>
-                    <span className='text-[0.75rem] text-[#1F2A37] border border-[#1F2A37] py-1 px-3 rounded-2xl'>View Profile</span>
-                    <span className='text-[0.75rem] text-[#1F2A37] border border-[#1F2A37] py-1 px-3 rounded-2xl ml-2'>Book Online Now</span>
+            <div className='w-full h-[95%] flex flex-col justify-center'>
+                <div className='text-[3.7vw] font-semibold'>William</div>
+                <div className='mt-[0.7vw]'>
+                    <span className='text-[2vw] text-[#1F2A37] font-medium border border-[#1F2A37] py-[0.5vw] px-[2vw] rounded-2xl'>View Profile</span>
+                    <span className='text-[2vw] text-[#1F2A37] font-medium border border-[#1F2A37] py-[0.5vw] px-[2vw] rounded-2xl ml-2'>Book Online Now</span>
                 </div>
-                <div className='mt-4 flex'>
-                    <span className='text-sm text-[#1F2A37] relative top-1'><Calendar1 /></span>
-                    <span className='text-lg font-semibold text-[#1F2A37] ml-2 underline flex'>Check Availability<ChevronRight className='relative top-1'/></span>
+                <div className='mt-[2vw] flex'>
+                    <span className='text-[#1F2A37] flex items-center'><Calendar1 className='h-auto w-[2.6vw]'/></span>
+                    <span className='text-[2vw] font-medium text-[#1F2A37] ml-2 underline flex items-center'>Check Availability<ChevronRight className='h-auto w-[2vw]' /></span>
                 </div>
-                <div className='mt-4 flex flex-col gap-1'>
-                    <span className='text-sm relative top-1 flex'><DollarSign size={16}/>&nbsp;<span className='text-zinc-600'>$71.10 - 79.00/hr</span></span>
-                    <span className='text-sm flex'><Star color="#f6d32d" size={16}/>&nbsp;&nbsp;<span className='text-zinc-600'>4.9 - 28 Ratings</span></span>
-                    <span className='text-sm flex'><CircleCheckBig size={16}/>&nbsp;&nbsp;<span className='text-zinc-600'>292 Completed Lessons</span></span>
+                <div className='mt-[2vw] flex flex-col gap-[0.2vw]'>
+                    <span className='text-[1.6vw] flex'><DollarSign className='h-auto w-[1.8vw]' />&nbsp;<span className='text-zinc-600'>$71.10 - 79.00/hr</span></span>
+                    <span className='text-[1.6vw] flex'><Star color="#f6d32d" className='h-auto w-[1.8vw]' />&nbsp;&nbsp;<span className='text-zinc-600'>4.9 - 28 Ratings</span></span>
+                    <span className='text-[1.6vw] flex'><CircleCheckBig className='h-auto w-[1.8vw]' />&nbsp;&nbsp;<span className='text-zinc-600'>292 Completed Lessons</span></span>
                 </div>
             </div>
         </div>

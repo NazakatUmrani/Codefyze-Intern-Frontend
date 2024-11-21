@@ -22,6 +22,7 @@ export default function Home() {
     <div
       className={`${geistSans.variable} ${geistMono.variable} flex flex-col min-w-screen font-[family-name:var(--font-geist-sans)] mb-11`}
     >
+      {/* Navbar */}
       <div className="flex justify-between navbar bg-[#1F2A37] h-30">
         <div className="w-full h-20 bg-road bg-center bg-cover sm:w-[20vw] sm:h-auto"></div>
         <div className="hidden sm:flex items-center w-[60vw] p-10 justify-center">
@@ -38,12 +39,16 @@ export default function Home() {
         </div>
         <div className="hidden sm:block bg-road bg-center bg-cover sm:w-[20vw]"></div>
       </div>
+
+      {/* Header */}
       <div className="toptext flex flex-col items-center p-9 gap-6">
         <div className="">We have <b>19 auto instructors</b> available in <b>Melbourne, 3000. </b>Lesson prices in Melbourne start from <b>$67.50/hr.</b></div>
         <ScheduleCarousel />
         <div className="text-4xl font-bold m-10">Instructor available in the next 7 days</div>
 
       </div>
+
+      {/* Cards */}
       <div className="CardContainer lg:px-auto flex justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10">
           <Card />

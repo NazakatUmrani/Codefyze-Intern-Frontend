@@ -44,7 +44,7 @@ body {
   width: 30vw;
   height: 36vh;
   background: #F1F1F1;
-  border-radius: 1.3rem;
+  border-radius: 5vw;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   margin: 1rem;
@@ -53,7 +53,7 @@ body {
   width: 80px; /* Fixed width */
   height: 80px; /* Fixed height */
   border-radius: 50%; /* Make it circular */
-  border: 2px solid #000; /* Add border with desired color */
+  border: 0.6vw solid #000; /* Add border with desired color */
   object-fit: cover; /* Maintain aspect ratio */
 }
 
