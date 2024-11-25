@@ -50,7 +50,7 @@ export function Header({ variant }) {
       ) : variant == "locations" ? (
         <div className="flex w-auto mx-auto flex-col items-center sm:w-[60vw] py-7 justify-center">
           <div className="text-white text-center text-[4vw] sm:text-xl xl:text-2xl mb-2 font-semibold">
-            Confirm we have driving instructors in your recipient's location
+            Confirm we have driving instructors in your recipient&apos;s location
           </div>
           <div className="w-[95vw] sm:w-[40vw]">
             <SearchBar />

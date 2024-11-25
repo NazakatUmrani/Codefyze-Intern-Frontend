@@ -2,9 +2,6 @@
 import Card from "@/components/Card";
 import { Header } from "@/components/Header";
 import ScheduleCarousel from "@/components/ScheduleCarousel";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Search } from "lucide-react";
 import localFont from "next/font/local";
 
 const geistSans = localFont({
