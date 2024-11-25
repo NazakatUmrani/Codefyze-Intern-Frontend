@@ -59,6 +59,12 @@ module.exports = {
 				'road': "url('/road.png')",
 				'previewEmail': "url('/previewemail.png')",
 				'innerEmail': "url('/emailinner.png')",
+				'roadMap': "url('/road-map.png')",
+				'streets': "url('/streets.png')",
+				'locationsFrame1': "url('/locations-frame-1.png')",
+				'locationsFrame2': "url('/locations-frame-2.png')",
+				'locationsFrame3': "url('/locations-frame-3.png')",
+				'locationsFrame4': "url('/locations-frame-4.png')",
 			}
 		}
 	},

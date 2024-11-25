@@ -1,5 +1,6 @@
 // import Image from "next/image";
 import { Combobox } from "@/components/ComboBox";
+import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -23,29 +24,7 @@ export default function Voucher() {
     <div
       className={`${geistSans.variable} ${geistMono.variable} flex flex-col w-screen font-[family-name:var(--font-geist-sans)]`}
     >
-      <div className="flex justify-between navbar bg-[#1F2A37] w-full">
-        <div className="hidden w-full h-20 bg-road bg-center bg-cover sm:block sm:w-[20vw] sm:h-auto"></div>
-        <div className="flex mx-auto flex-col items-center w-[60vw] py-7 justify-center">
-          <div className="text-white text-[4vw] sm:text-2xl md:text-3xl mb-2 font-semibold">
-            Get your gift voucher now!
-          </div>
-          <div className="w-full flex flex-col gap-2 items-center sm:flex-row sm:w-fit sm:gap-8">
-            <Button
-              className="w-full sm:w-auto bg-[#F0B000] px-3 text-center rounded-2xl text-[4vw] h-5 py-5 sm:text-sm sm:py-1 border border-[#F0B000] sm:h-7"
-              variant="primary"
-            >
-              Step 1 - Gift Voucher
-            </Button>
-            <Button
-              className="w-full sm:w-auto bg-[#FFFFFF] px-3 text-center rounded-2xl text-[4vw] h-5 py-5 sm:text-sm sm:py-1 border border-[#F0B000] sm:h-7"
-              variant="primary"
-            >
-              Step 2 - Checkout
-            </Button>
-          </div>
-        </div>
-        <div className="hidden bg-road bg-center bg-cover sm:block sm:w-[20vw]"></div>
-      </div>
+      <Header variant="voucher" />
       <main className="mx-4 flex flex-col md:mx-10 xl:mx-32 md:mt-11">
         {/* Hero S */}
         <section className="w-full flex flex-col-reverse md:flex-row lg:justify-center">

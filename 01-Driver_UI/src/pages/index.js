@@ -1,5 +1,6 @@
 // import Image from "next/image";
 import Card from "@/components/Card";
+import { Header } from "@/components/Header";
 import ScheduleCarousel from "@/components/ScheduleCarousel";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -22,25 +23,8 @@ export default function Home() {
     <div
       className={`${geistSans.variable} ${geistMono.variable} flex flex-col min-w-screen font-[family-name:var(--font-geist-sans)] mb-11`}
     >
-      {/* Navbar */}
-      <div className="flex justify-between navbar bg-[#1F2A37] h-30">
-        <div className="hidden sm:flex w-full h-20 bg-road bg-center bg-cover sm:w-[20vw] sm:h-auto"></div>
-        <div className="flex items-center w-full sm:w-[60vw] p-10 justify-center">
-          <div className="flex flex-col lg:flex-row items-center gap-3 w-[80vw]">
-            <div className="flex flex-col justify-center gap-2 w-full sm:flex-row xl:w-max">
-              <Button className="bg-[#FFFFFF] w-full sm:w-1/2 lg:w-32 h-8 text-center rounded-2xl text-sm py-1" variant="primary"><span className="text-green-700">✓ </span>Auto</Button>
-              <Button className="bg-[#F0B000] w-full sm:w-1/2 lg:w-32 h-8 text-center rounded-2xl text-sm" variant="primary">Manual</Button>
-            </div>
-            <div className="flex w-full gap-2">
-              <Input type="name" placeholder="Enter your suburb" className="bg-[#FFFFFF] text-neutral-400 w-full h-8 rounded-2xl text-sm py-1 text-start pl-2" />
-              <Button className="bg-[#F3B616] size-8 flex items-center justify-center rounded-full" variant="primary"><Search className="10vw" /></Button>
-            </div>
-          </div>
-        </div>
-        <div className="hidden sm:block bg-road bg-center bg-cover sm:w-[20vw]"></div>
-      </div>
-
-      {/* Header */}
+      <Header variant="homepage" />
+      {/* Hero Section Content */}
       <div className="flex flex-col items-center p-9 gap-6">
         <div className="text-[2.8vw] sm:text-lg md:text-xl">We have <b>19 auto instructors</b> available in <b>Melbourne, 3000. </b>Lesson prices in Melbourne start from <b>$67.50/hr.</b></div>
         <ScheduleCarousel />
