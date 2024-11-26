@@ -22,9 +22,9 @@ export function CalendarForm() {
         <Button
           variant="outline"
           className={cn(
-            "w-max justify-start text-left font-normal buttonLight border border-[#1F2A37] rounded-full text-[3vw] h-max sm:text-xl"
+            "w-fit justify-start text-left text-[2.5vw] font-normal buttonLight border border-[#1F2A37] rounded-full h-[5vw] px-2 md:h-max sm:text-xl"
           )}
-        >Custom<span className="flex items-center"><ChevronDown /></span></Button>
+        >Custom<span className="flex items-center"><ChevronDown size={1}/></span></Button>
       </PopoverTrigger>
       <PopoverContent className="w-auto p-0">
         <Calendar
