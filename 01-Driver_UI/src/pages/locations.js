@@ -41,7 +41,7 @@ export default function Locations() {
           {/* <div className='profile w-20 h-20'> */}
           <Image
             src="/road-map.png"
-            alt="Picture of the author"
+            alt="Road Map"
             width={1280} // Provide the width property
             height={1280} // Provide the height property
             className="w-full h-full object-contain border-none"
