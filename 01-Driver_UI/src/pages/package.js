@@ -89,6 +89,7 @@ export default function Package() {
             </section>
           </section>
         </div>
+
         {/* Main Content */}
         <section className="w-full flex justify-between items-start">
           {/* Tire Left */}
@@ -145,7 +146,7 @@ export default function Package() {
                   Manual
                 </Button>
               </div>
-              <SearchBar border="border border-black" shadow="true"/>
+              <SearchBar border="border border-black" shadow="true" />
             </div>
           </div>
           {/* Tire Right */}
@@ -154,6 +155,18 @@ export default function Package() {
             alt="tire-right"
             className="w-40 h-auto block transform -scale-x-100"
           />
+        </section>
+
+        {/* Card */}
+        <section className="mt-11 w-full aspect-[2.5/1] rounded-[3rem] shadow-[0px_0px_20px_rgba(0,0,0,0.4)] overflow-hidden">
+          <div className="h-1/2 w-full"></div>
+          <div className="h-1/2 w-full bg-[#1F2A37] relative">
+          <img
+            src="/road-strip.png"
+            alt="road-strip"
+            className="w-full h-auto block absolute top-0 object-contain"
+          />
+          </div>
         </section>
       </main>
     </div>
