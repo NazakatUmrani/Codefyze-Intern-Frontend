@@ -2,10 +2,11 @@
 
 import { Button } from "@/components/ui/button";
 import SearchBar from "./SearchBar";
+import { Label } from "./ui/label";
 
 export function Header({ variant }) {
   return (
-    <div className="flex justify-between navbar bg-[#1F2A37] w-full">
+    <div className={`flex justify-between navbar bg-[#1F2A37] w-full ${variant === "package/footer" ? "bg-[#F0B000]" : ""}`}>
       <div className="hidden sm:flex w-full h-20 bg-road bg-center bg-cover sm:w-[20vw] sm:h-auto"></div>
       {variant == "homepage" ? (
         <div className="flex items-center w-full sm:w-[60vw] p-10 justify-center">
@@ -64,6 +65,30 @@ export function Header({ variant }) {
           instructors in Australia. Driving lesson gift vouchers provide your
           recipient the flexibility to choose their own driving instructor and
           book driving lessons online at their leisure.
+        </div>
+      ) : variant == "package/footer" ? (
+        <div className="flex mx-auto flex-col items-center w-[60vw] py-7 justify-center space-y-4">
+          <div className="text-[#1F2A37] text-[4vw] sm:text-2xl md:text-3xl mb-2 font-semibold flex flex-col items-center">
+            <Label className="text-[4vw] sm:text-lg flex items-center font-bold text-center">Driving lesson packages & pricing</Label>
+            <Label className="text-[3vw] sm:text-lg flex items-center font-light text-center">Buy more lessons & get more discount</Label>
+          </div>
+          <div className="flex flex-col lg:flex-row items-center gap-3 w-full sm:px-20">
+              <div className="flex flex-col justify-center gap-2 w-full sm:flex-row xl:w-max">
+                <Button
+                  className="buttonLight w-full sm:w-1/2 lg:w-36 h-8 text-center rounded-2xl text-sm py-1 shadow-[0px_4px_10px_rgba(0,0,0,0.4)]"
+                  variant="primary"
+                >
+                  <span className="text-green-700">✓ </span>Auto
+                </Button>
+                <Button
+                  className="buttonDark w-full sm:w-1/2 lg:w-36 h-8 text-center rounded-2xl text-sm shadow-[0px_4px_10px_rgba(0,0,0,0.4)]"
+                  variant="primary"
+                >
+                  <span className="text-green-700">✓ </span>Manual
+                </Button>
+              </div>
+              <SearchBar border="border border-black" shadow="true" />
+            </div>
         </div>
       ) : (
         <></>
