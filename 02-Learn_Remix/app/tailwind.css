@@ -4,9 +4,26 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  /* @apply bg-white dark:bg-gray-950;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
-  }
+  } */
+  max-width: 100%;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.msg {
+  @apply bg-[#CCE1F7] w-[50%]
+}
+.msg h1 {
+  @apply text-[#0E3172] font-bold text-[1.3vw] lg:text-sm
+}
+.msg p {
+  @apply text-[1vw] md:text-[1.1vw]
 }
