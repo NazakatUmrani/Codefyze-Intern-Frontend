@@ -19,11 +19,11 @@ body {
 }
 
 .msg {
-  @apply bg-[#CCE1F7] w-[50%]
+  @apply bg-[#CCE1F7] w-[70%] sm:w-[60%] md:w-[50%]
 }
 .msg h1 {
-  @apply text-[#0E3172] font-bold text-[1.3vw] lg:text-sm
+  @apply text-[#0E3172] font-bold text-[2vw] lg:text-sm
 }
 .msg p {
-  @apply text-[1vw] md:text-[1.1vw]
+  @apply text-[1.4vw] md:text-[1.1vw]
 }
